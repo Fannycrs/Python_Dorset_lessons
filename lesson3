@@ -1,0 +1,73 @@
+#len()  : length
+#variable[0] : acces au caractere, variable[0:4], variable[ :4]
+#variable[-1] : acces au dernier caractere
+
+
+#  var.upper()  /  var.lower()
+
+
+# var.count('caractere')   : nbr de ce caractere ds la var
+# var.find('caractere')  : bool
+
+
+# var.replace('ancien', 'nouveau')
+
+#dir(str)
+
+
+#f"....{var}"
+# "...{}... .format(x)"
+
+
+#var = float(input("message a afficher"))
+
+#int(temps[:-1])
+#result=int(round(formule))
+
+#quit()
+
+kg = float(input("enter your weight in kg : "))
+hg = float(input("enter your height in m : "))
+
+bmi= kg/(hg*hg)
+
+if bmi<18.5 :
+    print("underweight")
+elif bmi<25 :
+    print("normal weight")
+elif bmi<30 :
+    print("overweight")
+else :
+    print("obesity")
+   
+#pour savoir si c'est en cm ou m, on entre avec l'unité et on separe avec h[-2:]
+    
+n1 = int(input("enter a natural number: "))
+n2 = int(input("enter another one: "))
+max =0;
+min=0;
+if n1>=n2 :
+    maxi =n1
+    mini=n2
+else :
+    maxi=n2
+    mini=n1
+print(f"{mini} is the minimum")
+qt=int(maxi/mini)
+md = maxi % mini
+if md == 0 :
+   print(f"the quotient is {qt}")
+else :
+   print(f"the quotient is {qt} with the rest {md}")
+
+    
+num = int(input("enter the number of units"))
+result = 0
+
+if num>=200 :
+    num = num-200
+    result +=num*10
+if num>=100 and num<200:
+    num-=100
+    result +=num*5
+print(f"the total bill amount is Rs{result}")
